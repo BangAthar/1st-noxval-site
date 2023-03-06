@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DruzeFx - Go To Another Page</title>
+  <link rel="icon" href="images/LDruzeFX-HP.png">
+  <link rel="stylesheet" href="css/redirect.css">
+</head>
+<body>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <h1 class="judul-utama">Good Bye!</h1>
+  <div class="container">
+    <img src="images/svg_shorten_link.png" alt="shorten link" class="logo-redirect">
+    <h2 class="judul-redirek">Hold On!</h2>
+    <p class="uwu">You're Being Redirect To Another Page in <span id="countdown">3</span> Seconds!<br>Please Wait...</p>
+  </div>
+</body>
+</html>
+<script>
+  var seconds = 3;
+    
+    function countdown() {
+    seconds = seconds - 1;
+    if (seconds < 0) {
+
+    window.location = "mailto:contact@druzefx.my.id?subject=Web%20druzefx.my.id";
+    } else {
+
+    document.getElementById("countdown").innerHTML = seconds;
+
+    window.setTimeout("countdown()", 1000);
+    }
+}
+    countdown();
+</script>
